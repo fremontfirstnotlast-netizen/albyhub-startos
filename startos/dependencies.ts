@@ -10,7 +10,7 @@ export const setDependencies = sdk.setupDependencies(async ({ effects }) => {
     return {
       lnd: {
         kind: 'running',
-        versionRange: '>=0.21.1-beta:0',
+        versionRange: '>=0.21.1-beta:4',
         healthChecks: ['lnd', 'sync-progress'],
       },
     }
