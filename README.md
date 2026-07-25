@@ -147,7 +147,7 @@
 
 | Property           | Value                                        |
 | ------------------ | -------------------------------------------- |
-| Version constraint | `>= 0.20.1-beta`                             |
+| Version constraint | Declared in `startos/dependencies.ts`        |
 | Required state     | Running                                      |
 | Health checks      | `lnd`, `sync-progress`                       |
 | Mounted volume     | `main` → `/mnt/lnd` (read-only)              |
@@ -159,7 +159,7 @@ Only required if you select "LND on this server" during setup. Provides the TLS 
 
 | Property           | Value                                        |
 | ------------------ | -------------------------------------------- |
-| Version constraint | `>= 26.6`                                    |
+| Version constraint | Declared in `startos/dependencies.ts`        |
 | Required state     | Running                                      |
 | Health checks      | `lightningd`, `check-synced`                 |
 | Mounted volume     | `main` → `/mnt/cln` (read-only)              |
@@ -171,7 +171,7 @@ Only required if you select "Core Lightning on this server" during setup. Alby H
 
 | Property           | Value                                        |
 | ------------------ | -------------------------------------------- |
-| Version constraint | `>= 0.7.3`                                   |
+| Version constraint | Declared in `startos/dependencies.ts`        |
 | Required state     | Running                                      |
 | Health checks      | `primary`                                    |
 | Mounted volume     | `main` → `/mnt/phoenixd` (read-only)         |
@@ -233,7 +233,7 @@ Only required if you select "phoenixd on this server" during setup. Alby Hub con
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for build instructions and development workflow.
+Build and development workflow follow the StartOS packaging guide: <https://docs.start9.com/packaging>. Keep `README.md`, `instructions.md`, and `AGENTS.md` in sync with any change to user-visible behavior or package structure.
 
 ---
 
