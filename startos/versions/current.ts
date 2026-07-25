@@ -1,7 +1,7 @@
 import { VersionInfo } from '@start9labs/start-sdk'
 
 export const current = VersionInfo.of({
-  version: '1.23.0:5',
+  version: '1.23.0:6',
   releaseNotes: {
     en_US: `Keeps the its Lightning backend connection working when its Lightning backend changes how it serves TLS.
 
