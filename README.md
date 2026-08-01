@@ -1,4 +1,4 @@
-<p align="center">
+<<p align="center">
   <img src="icon.svg" alt="Alby Hub Logo" width="21%">
 </p>
 
